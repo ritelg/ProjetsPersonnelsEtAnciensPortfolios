@@ -1,0 +1,13 @@
+
+.git
+**/__pycache__/
+
+# Parite
+Parite/env/
+Parite/data
+
+# Pendu
+Pendu/os
+Pendu/pickle
+Pendu/data
+Pendu/scores
