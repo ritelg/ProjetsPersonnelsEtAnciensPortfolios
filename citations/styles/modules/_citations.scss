@@ -1,0 +1,51 @@
+.citations {
+	background-color: $color;
+	div {
+		margin: 5% 0%;
+	}
+	margin: 0 auto;
+	height: 40%;
+	width: 45%;
+	
+	border: 1px solid $color;
+	border-radius: 50px;
+	box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, .4);
+	
+	margin-bottom: 10%;
+}
+
+.citations-text {
+	&-content {
+		margin-top: 15%;
+		font-size: 2.5em;
+	}
+	&-author {
+		margin-bottom: 15%;
+		font-size: 1.5em;
+	}
+	color: $color-fonce;
+	text-shadow: 1px 1px 2px black; 
+}
+
+.btn-custom {
+  background-color: $color-clair;
+  color: $color-fonce;
+  &:hover {
+    color: $color-clair;
+    background-color: $color-fonce;
+  }
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+	
+	border: 1px solid $color-alt;
+}
+
+.citations-footer {
+	position: relative;
+	z-index: 3;
+	background-color: $color;
+}
+

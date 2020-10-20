@@ -1,0 +1,29 @@
+/* ======================================================= *\
+    INIT
+\* ======================================================= */
+
+$img-directory: '../../data/';
+$image-header: $img-directory + 'img_header.jpg';
+$menu-boot-svg: $img-directory + 'menu-boot.svg';
+$img-moi: $img-directory + 'moi.jpg';
+
+/* ======================================================= *\
+    COLOR
+\* ======================================================= */
+
+$color-clair: #DADADA;
+$color: #2ea8d5;
+$color-fonce: #151515;
+$color-alt: #333333;
+
+/* ======================================================= *\
+    TAILLES
+\* ======================================================= */
+
+$height-header: 400px;
+$height-footer: 200px;
+$height-educations: 200px;
+
+
+$height-portfolio-item: 200px;
+$width-portfolio-item: 370px;

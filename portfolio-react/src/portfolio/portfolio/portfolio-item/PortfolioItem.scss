@@ -1,0 +1,75 @@
+@import "../../../assets/scss/variables";
+
+.portfolio-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  position: relative;
+  width: 35%;
+  height: 200px;
+  margin: 20px 20px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-item-content {
+  background: $color-fonce;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.portfolio-item:hover .portfolio-item-content {
+  display: flex;
+}
+.portfolio-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 3px rgba(218, 218, 218, 0.4);
+
+}
+.portfolio-item .btn {
+  margin: 0 5px;
+  font-size: 14px;
+  padding: 8px 13px;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .portfolio-items {
+    flex-direction: column;
+  }
+  .portfolio-item {
+    width: 80%;
+    height: 250px;
+  }
+
+  .portfolio-item-content-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .skill-input {
+    left: -19px
+  }
+
+  .portfolio-item-content-links a{
+    margin: 20px 0;
+  }
+}

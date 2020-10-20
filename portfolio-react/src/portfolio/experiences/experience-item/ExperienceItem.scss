@@ -1,0 +1,89 @@
+@import "../../../assets/scss/variables";
+
+
+.experience-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.experience-item {
+  position: relative;
+  width: 40%;
+  height: 300px;
+  color: $color-clair;
+
+}
+.experience-date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 20%;
+
+  background: $color;
+  text-align: center;
+  border-radius: 3px;
+  z-index: 2;
+}
+.experience-date p {
+  font-weight: 600;
+  margin-top: 10%;
+}
+
+.experience-content {
+  position: absolute;
+  background: $color-fonce;
+  right: 0;
+  bottom: 0;
+  width: 97%;
+  height: 97%;
+  border-radius: 3px;
+  padding: 15px;  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ .experience-content-title, .experience-content-lieux {
+  margin: 0;
+  padding: 0;
+  margin-left: 43%;
+   margin-right: 25px;
+}
+.experience-content-lieux {
+  font-weight: 200;
+}
+.experience-content-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.experience-content-description {
+  margin: 80px 60px 60px 60px;
+  font-weight: 400;
+}
+@media only screen and (max-width: 900px) {
+  .experience-items {
+    flex-direction: column;
+  }
+  .experience-item {
+    width: 80%;
+    margin: 30px 0px;
+  }
+  .experience-content {
+    display: flex;
+  }
+  .experience-content-description {
+    margin: 60px 50px;
+    font-weight: 400;
+  }
+
+
+  .experience-item {
+    width: 90%;
+    height: 300px;
+    color: $color-clair;
+
+  }
+}

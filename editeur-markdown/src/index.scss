@@ -1,0 +1,40 @@
+@import "variables";
+@import "scss/scrollbar";
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+body, textarea, div, h1, p{
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin: 21px 0 10px 0;
+  font-size: 30px;
+}
+.description {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+body {
+  min-width: 900px;
+  background: no-repeat center center / cover url($background);
+}
+.body:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background: $color-fonce;
+  opacity: 0.6;
+}
+body, .root {
+  width: 100vh;
+  height: 100vh;
+}
+.root {
+  position: relative;
+}

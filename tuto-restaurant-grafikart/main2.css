@@ -1,0 +1,634 @@
+/**
+    Fonts Weight : 
+    Regular : 400
+    Semi bold : 600
+    Bold : 700
+
+**/
+
+
+/**                                        **\
+                      RESET                       
+\**                                        **/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/**                                        **\
+                      BASE                       
+\**                                        **/
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-limit {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+body {
+    background-color: #F2F2F2;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #6F6F6F;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Pinyon Script', serif;
+    font-weight: 400;
+    color: #C89446;
+    line-height: .8;
+    font-size: 2.2rem;
+}
+
+h3 {
+    color: #383838;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.block {
+    text-align: center;
+}
+.block-title1::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 24px;
+    margin: 19px auto 19px auto;
+    background-color: #C89446;
+}
+.block-title2 {
+    margin-top: 10px;
+    margin-bottom: 19px;
+}
+.block-description {
+    margin-bottom: 2px;
+}
+.block-more {
+    color: #C89446;
+}
+
+.block-more::after, .block-more::after {
+    content: ' >';
+    display: inline-block;
+    padding-left: 10px;
+}
+
+
+/**                                        **\
+                      HEADER                       
+\**                                        **/
+.header {
+    position: relative;
+    width: 100%;
+    color: #FFF;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background: no-repeat center center / cover url(./img/salad-chicken.jpg);
+
+}
+.header::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.922045) 15.5%, rgba(54, 54, 54, 0.5) 39.24%), rgba(28, 28, 28, 0.4);
+
+}
+.header .container {
+    position: relative;
+    padding: 17px 0;
+}
+.header h1, .header h4, .header-topbar { text-transform: uppercase; }
+.header-topbar {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: .875rem;
+}
+.topbar-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 17px 0;
+    transition: all 0.3s;
+}
+.topbar-menu a, .header-center a {
+    opacity: 0.9;
+}
+.topbar-menu a:hover, .topbar-logo:hover, .header-center a:hover{
+    opacity:1;
+    color: #C89446;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.topbar-menu a.active {
+    opacity:1;
+    color: #C89446;
+}
+.topbar-logo:hover, .header-center a:hover {
+    text-decoration: none;
+}
+.topbar-menu .topbar-menu-button:hover {
+    color: #FFF;
+    background-color: #C89446;
+    text-decoration: none;
+}
+
+.topbar-menu-item, .topbar-menu-button {
+    padding: 0 14px;
+}
+.header-center {
+    text-align: center;
+    margin-top: 30px;
+}
+.header-center-title h1{
+    line-height: 1;
+    font-size: 2.5rem;
+    margin: 17px 0 12px 0;
+}
+.header-center-description {
+    font-weight: 300;
+    letter-spacing: 4px;
+    font-size: 1rem;
+}
+
+
+/**                                        **\
+                      INGREDIENTS                       
+\**                                        **/
+.ingredients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.ingredients-list {
+    border: 1px solid #C89446;
+    width: 50%;
+    color: #383838;
+}
+.ingredients-list li {
+    list-style-type: none;
+    font-weight: 600;
+    padding: 5px 0;
+    text-align: left;
+}
+
+.ingredients-list li::before {
+    content: attr(data-nb);
+    font-weight: 300;
+    width: 25px;
+    display: inline-block;
+    padding-right: 70px;
+}
+.ingredients-list li:first-child {
+    padding-top: 0;
+}
+.ingredients-list li:last-child {
+    padding-bottom: 0;
+}
+.ingredients-description {
+    width: 50%;
+
+}
+
+/**                                        **\
+                        Tutoriel                       
+\**                                        **/
+.tutorial {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.tutorial-video {
+    position: relative;
+    order: 1;
+    background: center center / cover url(./img/tutorial.jpg);
+    width: 60%;
+    height: 300px;
+    margin: 0 auto;
+}
+.tutorial-video-play {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0.9;
+    width: 60px;
+    height: 65px;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    background: no-repeat center center / 60px 60px url(./img/play.png);
+}
+.tutorial-video-play:hover {
+    transition: transform .3s;
+    transform: scale(1.1);
+}
+.tutorial-video::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.922045) 15.5%, rgba(54, 54, 54, 0.5) 39.24%), rgba(28, 28, 28, 0.4);
+}
+
+.tutorial-description {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    order:2;
+}
+
+/**                                        **\
+                      LIKE                       
+\**                                        **/
+.like {
+    width: 100%;
+    margin-top: 70px;
+}
+.like-description {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+}
+.like-description .block-title1::before {
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.like-body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.like-body-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.like-body-item:first-child {
+    padding-top: 30px;
+}
+.like-body-item-content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+}
+.like-body-item-image {
+    padding-bottom: 10px;
+    width: 125px;
+    height: 125px;
+}
+.like-body-item-image img {
+    width: 100%;
+    height: 100%;
+}
+.like-body-item-title {
+    letter-spacing: 2px;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+.like-body-item-description {
+    font-size: 0.875;
+    letter-spacing: 0;
+    transform: translateY(5px);
+}
+
+/**                                        **\
+                      FOOTER                       
+\**                                        **/
+.footer {
+    background-color: #383838;
+    width: 100%;
+}
+.footer .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.footer .title {
+    color: #C99649;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.footer .text {
+    font-weight: 300;
+    line-height: 1.875;
+}
+.footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+@media only screen and (min-width: 900px) {
+    h2 {
+        font-size: 3.75rem;
+    }
+    
+    h3 {
+        font-size: 1.75rem;
+        letter-spacing: 2px;
+    }
+
+    /**                                        **\
+                          BASE                       
+    \**                                        **/
+    .block {
+        width: 445px;
+        order: 1;
+        text-align: left;
+    }
+    .block-title1 {
+        font-size: 2.5rem;
+    }
+    .block-title1::before {
+        margin: 0 0 26px 0;
+    }
+
+    /**body {
+        background:
+            linear-gradient(to top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+            url(./screenshot2.jpg) top center no-repeat;
+            position: relative;
+            opacity: 0.6;
+    }**/
+
+    /**                                        **\
+                          HEADER                       
+    \**                                        **/
+    .header .container {
+        width: 82%;
+        padding: 0;
+    }
+    .header-topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        padding-top: 35px;
+    }
+    .topbar-menu-item:nth-child(4) {
+        padding-right: 28px;
+    }
+    .topbar-menu-button {
+        padding: 11px 16px 11px 16px;
+    }
+    .header-center {
+        margin-top: 0;
+        padding: 164px 0 224px 0;
+    }
+    .header-center-title h1{
+        font-size: 4.375rem;
+    }
+    .header-center-description {
+        font-weight: 300;
+        letter-spacing: 4px;
+        font-size: 1.5rem;
+    }
+    .topbar-menu {
+        display: block;
+        margin: 0;
+    }
+    .topbar-menu-button {
+        border: 1px solid #C89446;
+    }
+
+    /**                                        **\
+                        INGREDIENTS                       
+    \**                                        **/
+    .ingredients {
+        position: relative;
+        flex-direction: row;
+        width: 64%;
+        margin-left: 18%;
+        margin-right: 260px;
+        text-align: left;
+        margin-top: -22px;
+        justify-content: center;
+    }
+    .ingredients-list {
+        width: 375px;
+        margin-right: 100px;
+        padding-top: 35px;
+        padding-bottom: 30px;
+
+        transform: translateX(-27px);
+    }
+
+    .ingredients-list li{
+        padding-bottom: 20px;
+        padding-left: 15px;
+    }
+    .ingredients-description {
+        margin-top: 65px;
+        width: 445px;
+
+    }
+
+    /**                                        **\
+                          Tutoriel                       
+    \**                                        **/
+    .tutorial {
+        flex-direction: row;
+        margin-top: 130px;
+        height: 328px;
+        justify-content: center;
+        margin-right: 120px;
+    }
+    .tutorial-video {
+        order: 2;
+        width: 540px;
+        height: 328px;
+        margin: 0;
+        margin-left: 25px;
+    }
+    .tutorial-description {
+        width: 445px;
+        height: 222px;
+        order:1;
+        margin: 0;
+        margin-left: 220px;
+        margin-top: 41px;
+        text-align: left;
+    }
+
+
+    /**                                        **\
+                        LIKE                       
+    \**                                        **/
+    .like {
+        height: 712px;
+        margin-top: 150px;
+    }
+    .like-description {
+        width: 640px;
+    }
+
+    .like-body {
+        flex-direction: row;
+        margin-top: 80px;
+        margin-right: 205px;
+        margin-left: 218px;
+        justify-content: space-between;
+
+    }
+
+    .like-body-item {
+        flex-direction: row;
+        margin-bottom: 45px;
+        padding: 0;
+    }
+
+
+    .like-body-item:first-child {
+        padding-top: 0;
+    }
+    .like-body-item-image {
+        padding-bottom: 0;
+        margin-right: 24px;
+    }
+    .like-body-item-content {
+        width: 297px;
+        text-align: left;
+        transform: translateY(7px);
+    }
+    .like-body-item-description {
+        margin-bottom: 8px;
+        transform: translateY(5px);
+    }
+    /**                                        **\
+                          FOOTER                       
+    \**                                        **/
+    .footer {
+        height: 345px;
+        transform: translateY(145px);
+    }
+    .footer .content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        padding-top: 45px;
+        text-align-last: left;
+    }
+    .footer .fiasco { 
+        width: 445px; 
+        margin-left: 119px;
+        padding-right: 60px;
+    }
+    .footer .contact { 
+        width: 254px; 
+        padding: 0 60px;
+    }
+    .footer .openings { 
+        width: 290px; 
+        margin-right: 190px;
+        padding-left: 60px;
+    }
+    .footer .title {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .footer .text {
+        text-align: left;
+    }
+    .footer .copyright {
+        padding-top: 15px;
+        padding-bottom: 0;
+        text-align: left;
+        margin-left: 115px;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
+
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1130px) {
+
+
+    .ingredients-list {
+        margin-right: 50px;
+        width: 400px;
+    }
+    .ingredients-list li{
+        padding-bottom: 20px;
+        padding-left: 0;
+    }
+
+    .ingredients-list li::before{
+        padding-right: 40px;
+    }
+    .ingredients-description {
+        margin-top: 65px;
+        width: 445px;
+
+    }
+
+    .tutorial-video {
+        width: 50%;
+        height: 328px;
+        margin-right: 10px;
+    }
+    .tutorial-description {
+        width: 50%;
+        margin-left: 40px;
+        margin-top: 41px;
+        text-align: left;
+    }
+
+    .like-body {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    .like-body-item {
+        width: 50%;
+        padding-right: 30px;
+    }
+    .like-body-item.right {
+        justify-content: flex-end;
+        padding-right: 0;
+    }
+
+    .like-body-item-content {
+    }
+    .footer {
+        height: auto;
+    }
+    .footer .copyright {
+        padding-bottom: 40px;
+    }
+}

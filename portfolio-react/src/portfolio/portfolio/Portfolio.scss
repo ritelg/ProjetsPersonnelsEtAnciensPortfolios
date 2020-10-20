@@ -1,0 +1,15 @@
+@import "../../assets/scss/variables";
+
+.portfolio {
+  background: $color-fonce;
+  color: $color-clair;
+  width: 100%;
+}
+
+.portfolio .section-title:after {
+  width: 10%;
+
+}
+.portfolio.section {
+  margin-bottom: 0;
+}

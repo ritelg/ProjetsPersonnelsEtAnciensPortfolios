@@ -1,0 +1,23 @@
+
+/* ======================================================= *\
+    Background
+\* ======================================================= */
+
+.base-background {
+  color: white;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+
+
+body {
+  @extend .base-background;
+  background-image: url("https://www.assembleedesmedias.fr/wp-content/uploads/2014/11/FOND-ETOILE-web.jpg");
+
+
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.40);
+}

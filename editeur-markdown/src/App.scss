@@ -1,0 +1,59 @@
+@import "variables";
+.body {
+  width: 100%;
+  height: 100%;
+  color: $color-clair;
+}
+
+.markdown-edit, .markdown-result{
+  background: $color-fonce;
+  opacity: 0.7;
+  border: 1px solid rgba(218,218,218, 0.4);
+  margin: 10px 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(218,218,218, 0.4);
+  padding: 10px;
+}
+.header {
+  height: 20%;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  margin: 15px 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.markdown {
+  font-size: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80%;
+  width: 100%;
+}
+
+.markdown-edit {
+  width: 48%;
+  height: 100%;
+}
+
+.markdown-result {
+  width: 48%;
+  height: 100%;
+}
+
+
+.markdown-edit textarea {
+  background: none;
+  border: none;
+  color: $color-clair;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}

@@ -1,0 +1,27 @@
+
+body {
+  background-color: $color-clair;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+	margin: 5% 0%;
+	font-size: 3.5em; 
+	font-family: 'Josefin Slab', serif;
+	text-shadow: 1px 1px 2px black; 
+	color: $color-fonce;
+}
+p {
+	font-family: 'Josefin Slab', sans-serif;
+}
+
+.description {
+	font-size: 2em;
+	margin-bottom: 5%;
+	
+}
+
+span {
+	font-style: italic;
+}

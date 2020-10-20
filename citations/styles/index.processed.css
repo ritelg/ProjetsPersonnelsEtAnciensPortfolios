@@ -1,0 +1,94 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+/* ======================================================= *    RESET
+\* ======================================================= */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #CFD8DC;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  margin: 5% 0%;
+  font-size: 3.5em;
+  font-family: 'Josefin Slab', serif;
+  text-shadow: 1px 1px 2px black;
+  color: #37474F;
+}
+
+p {
+  font-family: 'Josefin Slab', sans-serif;
+}
+
+.description {
+  font-size: 2em;
+  margin-bottom: 5%;
+}
+
+span {
+  font-style: italic;
+}
+
+.citations {
+  background-color: #c7cacc;
+  margin: 0 auto;
+  height: 40%;
+  width: 45%;
+  border: 1px solid #c7cacc;
+  border-radius: 50px;
+  box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10%;
+}
+
+.citations div {
+  margin: 5% 0%;
+}
+
+.citations-text {
+  color: #37474F;
+  text-shadow: 1px 1px 2px black;
+}
+
+.citations-text-content {
+  margin-top: 15%;
+  font-size: 2.5em;
+}
+
+.citations-text-author {
+  margin-bottom: 15%;
+  font-size: 1.5em;
+}
+
+.btn-custom {
+  background-color: #CFD8DC;
+  color: #37474F;
+  transition: background-color 0.5s;
+  border: 1px solid #333333;
+}
+
+.btn-custom:hover {
+  color: #CFD8DC;
+  background-color: #37474F;
+}
+
+.citations-footer {
+  position: relative;
+  z-index: 3;
+  background-color: #c7cacc;
+}

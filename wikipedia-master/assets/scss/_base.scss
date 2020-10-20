@@ -1,0 +1,26 @@
+/* =============================== *\
+  Reset
+\* =============================== */
+body, html {
+  padding: 0px;
+  margin: 0px;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+/* =============================== *\
+  Base
+\* =============================== */
+body {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+li, a, li:hover, a:hover {
+  list-style: none;
+  text-decoration: none;
+}

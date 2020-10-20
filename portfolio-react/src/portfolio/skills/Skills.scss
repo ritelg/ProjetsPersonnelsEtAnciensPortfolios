@@ -1,0 +1,32 @@
+@import "../../assets/scss/variables";
+
+.skills {
+  background: $color-fonce;
+  color: $color-clair;
+  height: auto;
+}
+
+.skills-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+}
+.skills .section-title:after {
+  margin-top: 5px;
+   width: 10%;
+   height: 4px;
+ }
+@media only screen and (max-width: 900px) {
+  .skills {
+    height: auto;
+  }
+  .skills-button {
+    width: 50%;
+    flex-direction: column;
+  }
+  .skills-button .btn{
+    margin: 10px 0px;
+  }
+}

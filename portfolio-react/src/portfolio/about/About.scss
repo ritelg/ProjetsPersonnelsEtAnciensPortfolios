@@ -1,0 +1,77 @@
+@import "../../assets/scss/variables";
+
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 400px;
+}
+.about .section {
+  margin: 30px;
+}
+.about p {
+  font-size: 17px;
+}
+.about-contact p{
+  line-height: 25px;
+}
+.about-contact .parts, .about-contact-name {
+  font-weight: 600;
+}
+.about-contact-name span {
+  text-transform: uppercase;
+
+}
+.about-content-name, .about-content-description {
+  padding: 10px -0px;
+}
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  flex-direction: column;
+  font-weight: 400;
+  width: 40%;
+  height: 70%;
+}
+.about-content-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icons-item {
+  margin: 0 5px;
+}
+.icons-item:first-child {
+  margin-left: 0;
+}
+.icons-item:last-child {
+  margin-right: 0;
+}
+.about-img {
+  width: 40%;
+  height: 100%;
+  background: no-repeat top center / cover url($img-moi);
+}
+@media only screen and (max-width: 900px) {
+  .about .container {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+  }
+  .about-img {
+    display: none;
+  }
+  .about-content {
+    align-items: center;
+    width: 100%;
+  }
+
+}
+@media only screen and (min-width: 900px) {
+
+  .about-content {
+    margin: 50px 0;
+  }
+}
